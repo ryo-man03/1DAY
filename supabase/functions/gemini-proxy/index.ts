@@ -52,7 +52,7 @@ Deno.serve(async (req: Request) => {
 
     console.log(`[gemini-proxy] Calling Gemini API, prompt length=${prompt.length}`);
 
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
     let geminiRes: Response;
     try {
